@@ -57,7 +57,7 @@ input[type="number"]{padding:4px;border:1px solid #bbb;border-radius:3px;width:6
   <p>The initial state of the automaton (the tape) is constructed as follows:</p>
   <pre><code>[program] BB 0^(n+1) R 0</code></pre>
   <p>The program is a sequence of fixed length (in this model: 32 cells) placed at the beginning of the tape.<br>
-  During training, this program is searched/optimized. Together with the rules, it defines the behavious of the automata.</p>
+  During training, this program is searched/optimized. Together with the rules, it defines the behavious of the model.</p>
   <p>The separator <code>BB</code> acts as a clear boundary between program and input.</p>
   <p>The encoded input is placed after the separator: it consists of n+1 zeroes, followed by a red marker <code>R</code>, and a trailing 0.</p>
   <p>This structure is critical: the automaton's computation unfolds starting from this initialized state, processing the interaction between the program, the input beacon, and the evolving cell dynamics.</p>
